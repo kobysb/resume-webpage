@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", serif;
+    width: 700px;
+    margin: auto;
+  }
+  @media screen and (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
+
+.header {
+    text-align: center;
+}
+
+.sectionStart {
+    text-align: center;
+}
+
+.date {
+    float: inline-end;
+}
