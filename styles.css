@@ -1,8 +1,29 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* @keyframes contactFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+/* @keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    opacity: 1;
+  }
+} */
+
 body {
-    background-color: black;
+    background-color: #1B1B1B;
     color: white;
     font-family: "Roboto", serif;
-    width: 700px;
+    width: 1000px;
     margin: auto;
   }
   @media screen and (prefers-color-scheme: light) {
@@ -13,13 +34,53 @@ body {
   }
 
 .header {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
 }
 
+h1 {
+  font-size: 6em;
+  animation: fadeIn 3s;
+  animation-timing-function: ease-in;
+}
+
+/* .contacts {
+  animation: contactFadeIn 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+} */
+
 .sectionStart {
-    text-align: center;
+  text-align: center;
 }
 
 .date {
-    float: inline-end;
+  float: inline-end;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.panel {
+  background-color: #313131;
+  border-radius: 30px;
+}
+
+p {
+  margin: 1em 2em;
+}
+
+ul {
+  margin: 1em 2em;
+}
+
+h3 {
+  margin: 1em 2em;
 }
