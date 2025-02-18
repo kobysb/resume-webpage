@@ -1,8 +1,10 @@
+/* animation for fading in name on page */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+/* setting default colors, text, and margins */
 body {
     background-color: #1B1B1B;
     color: white;
@@ -11,11 +13,13 @@ body {
     margin: auto;
   }
 
+  /* default colors for panels */
   .panel {
     background-color: #313131;
     border-radius: 30px;
   }
-
+  
+  /* media query to check for light mode on browser and switch website theme accordingly */
   @media screen and (prefers-color-scheme: light) {
     body {
       background-color: white;
@@ -27,6 +31,7 @@ body {
     }
   }
 
+  /* formatting for header class */
 .header {
   display: flex;
   flex-direction: column;
@@ -35,20 +40,24 @@ body {
   justify-content: center;
 }
 
+/* adding fade animation to name on webpage */
 h1 {
   font-size: 6em;
   animation: fadeIn 3s;
   animation-timing-function: ease-in;
 }
 
-.sectionStart {
+/* alight panel title text to center */
+.panelTitle {
   text-align: center;
 }
 
+/* move date text to far right of panel */
 .date {
   float: inline-end;
 }
 
+/* use flexbox to set up desired spacing of panels */
 .container {
   display: flex;
   flex-direction: column;
@@ -57,6 +66,7 @@ h1 {
   margin-bottom: 3em;
 }
 
+/* margins for remaining text in panels */
 p {
   margin: 1em 2em;
 }
