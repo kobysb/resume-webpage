@@ -3,22 +3,6 @@
   100% { opacity: 1; }
 }
 
-/* @keyframes contactFadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-} */
-
-/* @keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    opacity: 1;
-  }
-} */
-
 body {
     background-color: #1B1B1B;
     color: white;
@@ -26,10 +10,20 @@ body {
     width: 1000px;
     margin: auto;
   }
+
+  .panel {
+    background-color: #313131;
+    border-radius: 30px;
+  }
+
   @media screen and (prefers-color-scheme: light) {
     body {
       background-color: white;
       color: black;
+    }
+
+    .panel {
+      background-color: #FAFAFA;
     }
   }
 
@@ -47,12 +41,6 @@ h1 {
   animation-timing-function: ease-in;
 }
 
-/* .contacts {
-  animation: contactFadeIn 3s;
-  animation-timing-function: ease-in;
-  animation-delay: 3s;
-} */
-
 .sectionStart {
   text-align: center;
 }
@@ -65,12 +53,8 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1em;
-}
-
-.panel {
-  background-color: #313131;
-  border-radius: 30px;
+  gap: 3em;
+  margin-bottom: 3em;
 }
 
 p {
