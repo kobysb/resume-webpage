@@ -78,3 +78,7 @@ ul {
 h3 {
   margin: 1em 2em;
 }
+
+.viewCounter {
+  display: inline;
+}
